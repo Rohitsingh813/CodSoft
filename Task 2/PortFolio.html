@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset some default styling */
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #aaa6a5;
+            color: #060000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header navigation */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fcfbfb;
+            margin: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #333;
+        }
+
+        /* About section */
+        #about {
+            background-color: #74b0b1;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .profile-image img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .profile-text h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .profile-text p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Skills section */
+        #skills {
+            background-color: #74b0b1;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #skills li {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            border: 1px solid #090101;
+            border-radius: 5px;
+            background-color: #1ba8a6;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #skills li:hover {
+            background-color: #bd5a03;
+        }
+
+        /* Projects section */
+        #projects {
+            background-color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .project {
+            display: inline-block;
+            text-align: left;
+            margin: 20px;
+            vertical-align: top;
+            max-width: 300px;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .project h3 {
+            margin-top: 10px;
+        }
+
+        /* Resume and Contact sections */
+        #resume, #contact {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fcf9f9;
+            color: #070101;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f7f7f7;
+        }
+    </style>
+    <title>Rohit Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <div class="profile-image">
+                <img src="C:\Users\rohit\Desktop\CodSoft\Task 2\my pic.jpg" alt="Your Photo" border="2px">
+            </div>
+            <div class="profile-text">
+                <h1>Rohit Kumar Singh</h1>
+                <p>Web Developer | Designer</p>
+                <p>I'm currently pursuing Master of Computer Application From IICMR MCA COLLEGE </p>
+               |Web Designer|Developer|WORDPRESS|C-C++|PYTHON|PHOTOSHOP|
+                |GRAPHIC DESIGNER | SQL - MySQL | HTML/CSS/JS |</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Wordpress</li>
+            <li>Photoshop</li>
+            <li>C/C++</li>
+            <li>MYSQL</li>
+            <li>Python</li>
+            <li>Ms Office</li>
+                <!-- Add more skills -->
+            </ul>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <a href="https://stmarysschoolsjp.com">
+            <img src="C:\Users\rohit\Desktop\CodSoft\Task 2\Site image.jpg" alt="Project 1" width="100" height="100"></a>
+            <h3>
+                St mary's Sen. Sec School</h3>
+            <p>To Build the website For the School Using Html, CSS, and Wordpress. </p>
+              <p>  This website is Only for given the Information About School and their activities.</p>
+            <p> More to Know abut this Tap on Project Image.</p>
+            </div>
+            <div class="project">
+            <img src="C:\Users\rohit\Desktop\CodSoft\Task 2\Site 2.jpg" alt="Project 1" width="100" height="100"></a>
+            <h3>
+                E-Kisan Portal</h3>
+            <p>This is my Mca Sem-II project.The primary objective of creating such a portal could be to enhance the efficiency, accessibility, and effectiveness of agricultural services and support.   </p>
+              <p>  This website is Only for given the Information About Agro Product and their activities.</p>
+            
+            </div>
+            <!-- Add more projects -->
+        </div>
+    </section>
+    
+    <section id="resume">
+        <div class="container">
+            <h2>My Resume</h2>
+           <a href="C:\Users\rohit\Desktop\CodSoft\Task 2\Rohit Kr. Singh Profile.pdf" download class="btn">Download Resume (PDF)</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+          <p><a href= "mailto:Rohitsingh30172@gmail.com">Email: Rohitsingh30172@gmail.com </a></p><br>
+        <p><a href="tel:+91-8264459012">MOB: +91-8264459012</a></p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Rohit Singh. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
