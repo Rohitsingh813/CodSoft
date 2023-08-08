@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background image for the entire page */
+        body {
+            background-image: url('page-background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Basic styles for header, navigation, and footer */
+        header {
+            background-color: #028080;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 200px;
+            height: auto;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin-right: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: right;
+            background-color: #03698102;
+            padding: 5px 0px;
+            border-radius: 5px;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            background-color: #fffefe;
+            color: #fff;
+        }
+
+        .search-bar button {
+            padding: 8px 15px;
+            background-color: #03567713;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: right;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            background-color: #028080;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        /* Styling for slider section */
+        .slider-section {
+            background-color: #fff;
+            padding: 0px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .slider {
+            max-width: 100%;
+            margin: 100;
+        }
+
+        .slider img {
+            max-width: 100%;
+            height: 200;
+        }
+
+        .about-section {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .about-text {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        /* Styling for search section */
+        .search-section {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .search-section h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .search-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Styling for featured content section */
+        .featured-content {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .featured-box {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .featured-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .featured-content p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #ff6600;
+            color: #080000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #03496e;
+        }
+
+        /* Styling for news section */
+        .news-section {
+            background-color: #000707;
+            color: #c6ac03;
+            padding: 20px 0;
+            overflow: visible;
+        }
+
+        .news-ticker {
+            display: inline-block;
+            white-space: nowrap;
+            animation: newsTicker 20s linear infinite;
+        }
+
+        .news-item {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 16px;
+            opacity: 0.7;
+        }
+
+        @keyframes newsTicker {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\rohit\Desktop\CodSoft\Images\Logo1.png" alt="Logo" height="20" width="50">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <!-- Add more social icons as needed -->
+        </div>
+    </header>
+    
+    <section class="slider-section">
+        <div class="slider">
+            <div><img src= "C:\Users\rohit\Desktop\CodSoft\Images\Slider.png" alt="Slide" width="100%" height="500"></div>
+            <div><img src="C:\Users\rohit\Desktop\CodSoft\Images\Slide2.png" alt="Slide 2" width="100%" height="500"></div>
+            <div><img src="C:\Users\rohit\Desktop\CodSoft\Images\Slide 3.jpg" alt="Slide 3" width="100%" height="500"></div>
+            <!-- Add more slides as needed -->
+        </div>
+    </section>
+    
+    <section class="search-section">
+        <h1>Welcome to Our Creative World</h1>
+        <p>Explore, Discover, Create</p>
+    </section>
+
+    <section class="about-section">
+            <h1>About Us</h1><br>
+            <img class="about-image" src= "C:\Users\rohit\Desktop\CodSoft\Images\about us.jpg" alignment="right" width="500">
+            <br><br>
+            <p>
+        At Creative Minds Design Studio, we are passionate about turning ideas into stunning visual experiences. With a team of highly skilled designers, artists, and innovators, we specialize in crafting unique and captivating designs that captivate, inspire, and elevate your brand to new heights.
+        Our journey began with a vision to reshape the design landscape. Since then, we have worked with a diverse range of clients, from startups to well-established brands, across various industries. Our commitment to excellence, attention to detail, and creative thinking sets us apart.
+        From logo design and branding to web development and digital marketing, our multidisciplinary approach ensures that every project is a masterpiece. We thrive on pushing boundaries, embracing challenges, and transforming ideas into reality.
+        Join us on a journey of innovation, creativity, and collaboration. Let's bring your vision to life and create something extraordinary together.
+    </p>    
+    </div>
+    </section>
+
+    <section class="featured-content">
+        <div class="featured-box">
+            <h2>Featured Content</h2>
+            <p>Discover our latest and greatest creations. Be inspired and join our creative community today.</p>
+            <a href="#" class="cta-button">Explore Now</a>
+        </div>
+    </section>
+
+    <section class="news-section">
+        <div class="news-ticker">
+            <div class="news-item">Breaking News: New Product Launch!</div>
+            <div class="news-item">Join Our Creative Workshops</div>
+            <div class="news-item">Check Out Our Latest Projects</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+     <p alignments="center"> &copy; 2023 Creative Landing Page for CodSoft. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false
+            });
+        });
+    </script>
+</body>
+</html>
